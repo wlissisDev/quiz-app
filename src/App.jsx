@@ -9,8 +9,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='quiz' element={<Quiz />} />
+      {/* <Route path='/' element={<Home />} /> */}
+      <Route path='/' element={<Quiz />} />
       <Route path='score' element={<Score />} />
     </Routes>
 
