@@ -53,7 +53,7 @@ export function Quiz() {
             <div className={styles.question}>
                 <div>
                     <span>Questao {next + 1} de 10</span>
-                    <p>{data[next].question}</p>
+                    <p>{data[next]??.question}</p>
                 </div>
                 <div className={styles.progress}>
                     <div style={{
@@ -65,27 +65,27 @@ export function Quiz() {
                 <Answer
                     active='A'
                     setSearchParams={() => setSearchParams({ 'active': 'A' })}
-                    answer={data[next].answers.answer_a}
-                    correct={data[next].correct_answers.answer_a_correct}
+                    answer={data[next]?.answers.answer_a}
+                    correct={data[next]?.correct_answers.answer_a_correct}
 
                 />
                 <Answer
                     active='B'
                     setSearchParams={() => setSearchParams({ 'active': 'B' })}
-                    answer={data[next].answers.answer_b}
-                    correct={data[next].correct_answers.answer_b_correct}
+                    answer={data[next]?.answers.answer_b}
+                    correct={data[next]?.correct_answers.answer_b_correct}
                 />
                 <Answer
                     active='C'
                     setSearchParams={() => setSearchParams({ 'active': 'C' })}
-                    answer={data[next].answers.answer_c}
-                    correct={data[next].correct_answers.answer_c_correct}
+                    answer={data[next]?.answers.answer_c}
+                    correct={data[next]?.correct_answers.answer_c_correct}
                 />
                 <Answer
                     active='D'
                     setSearchParams={() => setSearchParams({ 'active': 'D' })}
-                    answer={data[next].answers.answer_d}
-                    correct={data[next].correct_answers.answer_d_correct}
+                    answer={data[next]?.answers.answer_d}
+                    correct={data[next]?.correct_answers.answer_d_correct}
                 />
                 <button
                     onClick={()=>{
