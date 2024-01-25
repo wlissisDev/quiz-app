@@ -1,0 +1,46 @@
+.answer{
+    background-color: rgb(69, 66, 120);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-height: 80px;
+    height: auto;
+    width: 500px;
+
+    transition: all .2s;
+}
+.box{
+    background-color: rgb(242, 242, 242);
+    color: rgb(69, 66, 120);
+    width: 10%;
+    height: 100%;
+    font-size: 22px;
+    border-radius: 8px;
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+
+    transition: all .2s;
+}
+
+.answer:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.answer:hover .box{
+    background-color: rgb(69, 66, 120);
+    color: aliceblue;
+}
+p{
+    font-size: 20px;
+}
+
+
+@media (max-width:950px) {
+    .answer{
+        width: 100%;
+    }
+}
